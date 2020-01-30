@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+.area-chart-container {
+  font-family: "Lato", sans-serif;
+  color: #555;
+  background: #ddd;
+  width: 90vw;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+.area-chart-container svg {
+  overflow: visible;
+}
+
+.area-chart-container .area {
+  fill: url(#temperature-gradient);
+  stroke-width: 1px;
+}
+.area-chart-container .grid-line {
+  stroke: rgba(153, 153, 153, 0.192);
+}
+.area-chart-container svg path.line {
+  fill: none;
+  stroke: rgb(250, 3, 3);
+  stroke-width: 1px;
+}
+.area-chart-container .highlightGrid {
+  stroke: rgb(250, 3, 3);
+  stroke-width: 1px;
+}
+.area-chart-container .tooltips-text {
+  font-size: 0.5em;
+}
+.area-chart-container .tooltips-temp {
+  fill: red;
+  font-weight: bolder;
+  font-size: 0.7em;
+}
