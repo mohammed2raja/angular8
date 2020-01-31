@@ -11,7 +11,6 @@ export class ChartsComponent implements OnInit {
   constructor(private _area: AreaService) { }
 
   // include the SVG frame and the group element in which the visualization will be actually displayed
-
   // format the data
   processTemperatireData() {
     const data = [
@@ -74,7 +73,7 @@ export class ChartsComponent implements OnInit {
 
   ngOnInit() {
     this._area.drawAreaChart({
-      container: "#app",
+      container: "container-area-chart",
       width: 600,
       height: 300,
       data: this.processTemperatireData(),

@@ -1,15 +1,25 @@
-<header>
-  <div class="container">
-    <a routerLink="/" class="logo">CoolApp</a>
-    <nav>
-      <ul>
-        <li><a href="#" routerLink="/">Home</a></li>
-        <li><a href="#" routerLink="/charts">Charts</a></li>
-      </ul>
-    </nav>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+  <a class="navbar-brand" href="#">Data Visualization: Angular 8</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav my-2 my-lg-0 ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/charts">Charts</a>
+      </li>
+    </ul>
   </div>
-</header>
+</nav>
 
-<div class="container">
+
+<div class="container-fluid">
   <router-outlet></router-outlet>
 </div>
+<footer>
+  <p  class="text-xs-center">© Copyright 2019. All rights reserved.</p>
+</footer>

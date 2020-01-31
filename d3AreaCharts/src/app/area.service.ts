@@ -29,7 +29,7 @@ export class AreaService {
 
 */
 drawAreaChart(option) {
-  const container = d3.select(option.container);
+  const container = d3.select('.'+option.container);
   const margin = {
     top: 20,
     right: 20,
@@ -45,6 +45,7 @@ drawAreaChart(option) {
 
   const svgContainer = container
     .append("svg")
+    .attr("class", "svg")
     .attr(
       "viewBox",
       `0 0 ${width + margin.left + margin.right} ${height +
@@ -150,7 +151,7 @@ drawAreaChart(option) {
 
   // GRID system
   // target all the horizontal ticks and include line elements making up vertical grid lines
-  d3.selectAll(".area-chart-container #x-axis g.tick")
+  d3.selectAll("."+option.container+" #x-axis g.tick")
     .append("line")
     .attr("class", "grid-line")
     .attr("x1", 0)
@@ -159,7 +160,7 @@ drawAreaChart(option) {
     .attr("y2", -(height - (margin.top + margin.bottom)));
 
   // repeat the operation, but with regards to horizontal grid lines
-  d3.selectAll(".area-chart-container #y-axis g.tick")
+  d3.selectAll("."+option.container+" #y-axis g.tick")
     .append("line")
     .attr("class", "grid-line")
     .attr("x1", 0)

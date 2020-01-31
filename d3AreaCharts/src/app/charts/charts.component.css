@@ -1,38 +1,46 @@
+@import "~bootstrap/dist/css/bootstrap.css";
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
-
-.area-chart-container {
-  font-family: "Lato", sans-serif;
-  color: #555;
-  background: #ddd;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.nav-tabs{
+  margin: 20px 0;
+}
+.container{
+  margin-top: 100px;
+}
+.container-area-chart {
   width: 90vw;
   max-width: 800px;
   margin: 1.5rem auto;
   text-align: center;
 }
-.area-chart-container svg {
+::ng-deep  .svg{
   overflow: visible;
 }
 
-.area-chart-container .area {
+::ng-deep .area {
   fill: url(#temperature-gradient);
   stroke-width: 1px;
 }
-.area-chart-container .grid-line {
+::ng-deep .grid-line {
   stroke: rgba(153, 153, 153, 0.192);
 }
-.area-chart-container svg path.line {
+::ng-deep svg path.line {
   fill: none;
   stroke: rgb(250, 3, 3);
   stroke-width: 1px;
 }
-.area-chart-container .highlightGrid {
+::ng-deep .highlightGrid {
   stroke: rgb(250, 3, 3);
   stroke-width: 1px;
 }
-.area-chart-container .tooltips-text {
+::ng-deep .tooltips-text {
   font-size: 0.5em;
 }
-.area-chart-container .tooltips-temp {
+::ng-deep .tooltips-temp {
   fill: red;
   font-weight: bolder;
   font-size: 0.7em;
