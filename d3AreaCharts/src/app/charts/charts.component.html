@@ -1,16 +1,16 @@
 <div class="container-fluid">
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" href="#">1 Week</a>
+      <a class="nav-link" [ngClass]="{'active': selectedBtn == '1week'}" [routerLink]="[]" (click)="realodData('1week')">1 Week</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">3 Weeks</a>
+      <a class="nav-link" [ngClass]="{'active': selectedBtn == '3week'}" [routerLink]="[]" (click)="realodData('3week')">3 Weeks</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">1 Month</a>
+      <a class="nav-link" [ngClass]="{'active': selectedBtn == '1month'}" [routerLink]="[]" (click)="realodData('1month')">1 Month</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">3 Months</a>
+      <a class="nav-link" [ngClass]="{'active': selectedBtn == '3months'}" [routerLink]="[]" (click)="realodData('3months')">3 Months</a>
     </li>
   </ul>
   <div id="areaChart" class="container-area-chart"></div>
