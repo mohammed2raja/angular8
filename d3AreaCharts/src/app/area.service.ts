@@ -137,7 +137,7 @@ export class AreaService {
   }
   createArcAndLine() {
     this.makeGradientPattern()
-    const curve = d3.curveLinear;
+    const curve = d3.curveMonotoneX;
 
     const line = d3
       .line()
@@ -365,6 +365,7 @@ export class AreaService {
       });
       this.CHART_CONTAINER.append("g").call(xAxis);
     this.createTooltips()
+    this.createGrid()
   }
 
 

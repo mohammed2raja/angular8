@@ -92,7 +92,7 @@ export class ChartsComponent implements OnInit {
   this._area.createArcAndLine();
   this._area.createGrid()
   this._area.createMajorLine(95)
-  this._area.createMajorLine(105)
+  this._area.createMajorLine(102)
   this._area.createTooltips();
   }
 
